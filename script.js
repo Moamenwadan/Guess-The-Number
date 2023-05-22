@@ -13,6 +13,8 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('.right .message').textContent = 'No number';
   } else if (guess === secretNumber) {
     document.querySelector('.message').textContent = 'correct Number';
+    document.querySelector('body').style.background = '#60b347';
+    document.querySelector('.number').style.width = '30rem';
   } else if (guess < secretNumber) {
     document.querySelector('.message').textContent = 'too Low';
     if (score > 1) {

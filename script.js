@@ -1,5 +1,8 @@
 'useStrict';
 
+let secretNumber = Math.trunc(Math.random() * 20 + 1);
+console.log(secretNumber);
+document.querySelector('.number').textContent = secretNumber;
 let score = 20;
 
 document.querySelector('.check').addEventListener('click', function () {
